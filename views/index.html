@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="views/index.css">
+    <script src="views/index.js"></script>
+    <title>AutoQuizlet</title>
+  </head>
+  <body>
+    <form enctype="multipart/form-data" action="/submit" method="post" id="form" onsubmit="handleForm();">
+      <input type="file" id="input" name="input" required>
+
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" required>
+
+      <label for="fileRegex">Regex (1st capture group is term, 2nd is defintion):</label>
+      <input type="text" id="fileRegex" name="fileRegex" required>
+
+      <input type="submit" id="submit" value="Submit"/>
+    </form>
+    <br>
+    <br>
+    <a href="https://quizlet.com/"><b>Powered by Quizlet</b></a>
+  </body>
+</html>
